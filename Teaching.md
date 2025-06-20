@@ -40,3 +40,113 @@
 *   [Exam 18/19](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE558/EIE558_Exam_1819.pdf)
 *   [Exam 20/21](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE558/EIE558_Exam_2021.pdf)
 *   [Exam 21/22](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE558/EIE558_Exam_2122.pdf)
+
+
+**Theoretical Fundamental and Engineering Approaches for Intelligent Signal and Information Processing (EIE6207)**
+
+*   [Schedule](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_Schedule.doc)
+*   [Assignments  
+    Rubrics](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_Assignments.pdf)
+*   [Syllabus](http://www.eie.polyu.edu.hk/docs/Programmes/Booklets/PhD_MPhil/PhD_MPhil_Programme_Booklet_1516.pdf)
+*   [Notes: Constrain Optimization and SVM](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/ContOpt-SVM-beamer.pdf)
+*   [Notes: Clustering and EM Algorithms](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/Clustering-beamer.pdf)
+*   [Notes: Dimension Reduction, PCA, and LDA](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/PCA-LDA-beamer.pdf)
+*   [Notes: Factor Analysis and I-Vectors  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/FA-beamer.pdf)
+*   [Notes: Deep Learning, DNN, gradient descent and Backpropagation](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/DNN-beamer.pdf)
+*   [Notes: Estimation Theory](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EstTheory-beamer.pdf)
+*   [Notes: Maximum-Likelihood and Bayesian Estimation](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/Estimators-beamer.pdf)  
+*   [Notes: Kalman Filter](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/KalmanFilter-beamer.pdf)
+*   [Tutorial: Constrained Optimization and SVM](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_ConstOpt&SVM.doc)        ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_ConstOpt&SVM_sol.doc))
+*   [Tutorial: K-means and EM](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_clustering.pdf)        ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_clustering-sol.pdf)) ([solutions Q1](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_Kmeans&EM-Q1_sol.doc))
+*   [Tutorial: PCA and LDA](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_PCA&LDA.doc)        ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_PCA&LDA_sol.doc))
+*   [Tutorial: Gradient Descent and Backpropagation](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_NN&BP.doc)        ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_NN&BP_sol.doc))
+*   [Tutorial: Estimation Theory](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_est-theory.pdf)        ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_est-theory_sol.pdf))
+*   [Tutorial: Kalman Filter](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_KalmanFilter.docx)        ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_tut_KalmanFilter_sol.docx))
+*   [Lab: Harness AI with Nvidia Jetson TX2](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_Lab-jetson.docx)        [Harness AI with Google Colab](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_Lab-colab.docx)
+*   [Exam 2015/16](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_exam_1516.pdf)
+*   [Exam 2016/17](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_exam_1617.pdf)
+*   [Exam 2017/18](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_exam_1718.pdf)
+*   [Exam 2018/19](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_exam_1819.pdf)
+*   [Exam 2019/20](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207/EIE6207_exam_1920.pdf)
+*   [Teaching Materials for Academic Year 2015/16](http://www.eie.polyu.edu.hk/%7Emwmak/EIE6207_1516.html) 
+
+**Multimodal Human Computer Interaction Technology (EIE4105)**
+
+*   [Schedule](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Schedule.doc)
+*   [Subject Overview](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_CourseOutline.pptx)
+*   [SFQ of Previous Years](http://www.eie.polyu.edu.hk/%7Emwmak/SFQ.htm)
+*   [Assignments](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_homework.docx)
+*   [Notes: Introduction to HCI  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Introduction.pptx)
+*   [Notes: Fundamentals of Statistical Learning  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_StatLearning.pptx)
+*   [Notes: Machine Learning for Pattern Recognition](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_MLforPatternRec.pptx)
+*   [Notes: Dimension Reduction for HCI  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_DimReduction.pptx)
+*   [Notes: Face Recognition](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_FaceRecognition.pptx)  
+*   [Notes: Deep Learning and Deep Neural Networks for HCI](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_DeepLearning.pptx)
+*   [Notes: Speech Recognition  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_SpeechRecognition.pptx)
+*   [Notes: Speaker Recognition](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_SpeakerRecognition.pptx)
+*   [Tutorial: Review of Basic Statistics](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_RevStats.doc)
+*   [Tutorial: Introduction to HCI](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_IntroHCI.doc)
+*   [Tutorial: Review of Basic Statistics](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_RevStats.doc)
+*   [Tutorial: Fundamental of Statistical Learning](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_StatLearning.docx) ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_StatLearning_sol.docx) [](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_StatLearning.doc) 
+*   [Tutorial: Machine Learning for Pattern Recognition](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_MLforPatRec.doc) ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_MLforPatRec_sol.doc)
+*   [Tutorial: Dimension Reduction](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_DimReduction.doc) ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_DimReduction_sol.doc)
+*   [Tutorial: Deep Learning](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_DeepLearning.doc) ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_DeepLearning_sol.doc)
+*   [Tutorial: Speech Recognition](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_SpeechRecognition.doc)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_SpeechRecognition_sol.doc)
+*   [Tutorial: Speaker Recognition](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_SpeakerRecognition.doc)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_tut_SpeakerRecognition_sol.doc)
+*   [Lab1: Machine Learning for Handwritten Digit Recognition  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Lab1-colab.docx)
+*   [Lab2: SVM, PCA, and LDA for HCI](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Lab2-colab.docx)
+*   [Lab3: Harness AI with Nvidia Jetson TX2](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Lab3-jetson.docx)   [Harness AI with Google Colab  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Lab3-colab.docx)
+*   [Test 2015/16](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Test1516.doc)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Test1516-sol.doc)
+*   [Test 2016/17](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Test1617.pdf)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Test1617-sol.pdf)
+*   [Test 2017/18](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Test1718.pdf)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Test1718-sol.pdf)
+*   [Test 2019/20](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_test_1920.pdf)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_test_1920_sol.pdf)
+*   [Test 2021/22](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_test_2122.pdf)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_test_2122_sol.pdf)
+*   [Test 2023/24](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_test_2324.pdf)  ([Solutions)](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_test_2324_sol.pdf)  
+    [](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Exam1516.doc)
+*   [Exam 2015/16](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Exam1516.doc)
+*   [Exam 2016/17](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Exam1617.pdf)
+*   [Exam 2017/18](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_Exam1718.pdf)
+*   [Exam 2019/20](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_exam_1920.pdf)
+*   [Exam 2021/22](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4105/EIE4105_exam_2122.pdf)
+
+
+**Deep Learning and Deep Neural Networks (EIE4122)**  
+*   [Teaching Schedule](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Schedule.doc)
+*   [Course Outline](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_CourseOutline.pptx)      [Video of Course Outline](https://polyuit-my.sharepoint.com/:v:/g/personal/enmwmak_polyu_edu_hk/EasgBZdKcABCgEzix6GsTEoBUfr0FO5by2L93oqz4s08SA?e=LDNkFt)
+*   [SFQ of Previous Years](http://www.eie.polyu.edu.hk/%7Emwmak/SFQ.htm)
+*   [Assignments](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Assignment.docx)
+*   [Lecture: Introduction](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Introduction.pptx)
+*   [Lecture: Machine Learning](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_MachineLearning.pptx)  
+*   [Lecture: From ANN to DNN  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_ANN2DNN.pptx)
+*   [Lecture: Deep Architecture (Part 1)  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_DeepArch-1.pptx)
+*   [Lecture: Deep Architecture (Part 2)  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_DeepArch-2.pptx)
+*   [Lecture: Deep Learning  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_DeepLearning.pptx)
+*   [Lecture: Advanced Topics  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_AdvancedTopics.pptx)
+*   [Lecture: Computation Platforms and Tools  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_ComputationPlatforms.pptx)
+*   [Lab 1: DNN Development Platform  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Lab1.docx)
+*   [](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE558/EIE558_Colab_SphRec.docx)[Lab 2: RNN and LSTM for Text Analysis  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Lab2.docx)
+*   [Lab 3: Gradient Vanishing and ResNets  
+    ](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Lab3.docx)
+*   [Tutorial 1: Machine Learning](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_MachineLearning.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_MachineLearning_sol.docx))  [](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_MachineLearning.docx)
+*   [Tutorial 2: ANN to DNN](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_ANN2DNN.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_ANN2DNN_sol.docx))[](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_ANN2DNN.docx)
+*   [Tutorial 3: DNN, CNN. ResNet, and DenseNet](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_DeepArch1.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_DeepArch1_sol.docx))
+*   [Tutorial 3: RNN. LSTM, and Transformer](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_DeepArch2.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_DeepArch2_sol.docx))
+*   [Tutorial 4: Deep Learning](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_DeepLearning.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_tut_DeepLearning_sol.docx))
+*   [Mid-Term Test 2021/22](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_test2122.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_test2122_sol.docx))      
+*   [Mid-Term Test 2022/23](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_test2223.docx)    ([solutions](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_test2223_sol.docx))  
+*   [Exam 20/21](http://www.eie.polyu.edu.hk/%7Emwmak/notes/EIE4122/EIE4122_Exam_2021.pdf)
