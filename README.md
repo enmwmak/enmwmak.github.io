@@ -74,7 +74,7 @@ Man-Wai Mak received a BEng (Hons) degree in Electronic Engineering from Newcast
 
 ## Teaching
 
-*   [Teaching Materials](http://www.eie.polyu.edu.hk/~mwmak/myteaching.htm)
+*   [Teaching Materials](https://github.com/enmwmak/enmwmak.github.io/blob/main/Teaching.md)
 *   [Dissertations of My Postgraduate Students](https://github.com/enmwmak/home/blob/main/PostDissertations.md)
 *   [Selected Undergraduate Students' Projects](http://www.eie.polyu.edu.hk/~mwmak/FinalYearPrj.htm)
 *   [Software for Download](http://www.eie.polyu.edu.hk/~mwmak/Download.htm)
