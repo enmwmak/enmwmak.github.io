@@ -1,7 +1,5 @@
 # enmwmak.github.io
 
-![Photo](https://enmwmak.github.io/assets/images/mwmak1.jpg)
-
 ## Professor
 * **Teaching Areas**: machine learning, spoken language processing, and audio processing
 * **Research Areas**: Speaker recognition, machine learning, spoken language processing, biomedical engineering, and bioinformatics
