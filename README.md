@@ -2,6 +2,7 @@
 
 <p align="center">
   <img src="https://enmwmak.github.io/assets/images/mwmak1.jpg" width="250" title="M.W. Mak">
+  <img src="https://enmwmak.github.io/assets/images/mwmak2.jpg" width="250" title="M.W. Mak">
 </p>
 
 ## Professor
