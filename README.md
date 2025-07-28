@@ -1,6 +1,6 @@
 # enmwmak.github.io
 
-![Photo](/enmwmak.github.io/assets/mwmak1.jpg)
+![Photo](https://enmwmak.github.io/assets/images/mwmak1.jpg)
 
 ## Professor
 * **Teaching Areas**: machine learning, spoken language processing, and audio processing
