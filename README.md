@@ -59,9 +59,9 @@ Man-Wai Mak received a BEng (Hons) degree in Electronic Engineering from Newcast
     *   [TU Youzhi (graduated in 2022, now PostDoc at HKPolyU)](https://orcid.org/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%200000-0002-9580-2414)  
     *   KE Xiaoquan (graduated in 2024, now PostDoc at CUHK)  
     *   YI Lu (graduated in 2024, now PostDoc at PolyU)
-    *   LU Chong Kai (graduated in 2024)
+    *   LU Chong Kai (graduated in 2024, now PostDoc at Fudan University)
+    *   LI Zhe (graduated in 2025, now PostDoc at HKU)
     *   ZUO Lishi
-    *   LI Zhe
     *   LI Jin
     *   GAN Chongxin
     *   JIN Zezhong
