@@ -1,9 +1,3 @@
-<!--
-<p align="center">
-  <img src="https://enmwmak.github.io/assets/images/mwmak2.jpg" width="350" title="M.W. Mak">
-</p>
--->
-
 <table>
     <tr>
       <th colspan="3">
@@ -15,6 +9,7 @@
       <td><p align="center"><img src="https://enmwmak.github.io/assets/images/embook.jpg" width="100"></p></td>
     </tr>    
 </table>
+
 
 ## Professor
 * **Teaching Areas**: machine learning, spoken language processing, and audio processing
