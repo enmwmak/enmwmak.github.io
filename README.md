@@ -5,19 +5,15 @@
 -->
 
 <table>
-  <tbody>
     <tr>
-      <th scope="row" colspan="3">
-      <p align="center"><img src="https://enmwmak.github.io/assets/images/mwmak2.jpg" width="400"></p></th>
+      <th colspan="3">
+      <p align="center"><img src="https://enmwmak.github.io/assets/images/mwmak2.jpg" width="300"></p></th>
     </tr>
     <tr>
-      <th scope="row" colspan="1">
-      <p align="center"><img src="https://enmwmak.github.io/assets/images/MLforSR.jpg" width="100"></p></th>
-      <th scope="row" colspan="1">
-      <p align="center"><img src="https://enmwmak.github.io/assets/images/subloc_book.png" width="100"></p></th>
-      <th scope="row" colspan="1">
-      <p align="center"><img src="https://enmwmak.github.io/assets/images/embook.jpg" width="100"></p></th>
-    </tr>
+      <td><p align="center"><img src="https://enmwmak.github.io/assets/images/MLforSR.jpg" width="100"></p></td>
+      <td><p align="center"><img src="https://enmwmak.github.io/assets/images/subloc_book.png" width="100"></p></td>
+      <td><p align="center"><img src="https://enmwmak.github.io/assets/images/embook.jpg" width="100"></p></td>
+    </tr>    
 </table>
 
 ## Professor
