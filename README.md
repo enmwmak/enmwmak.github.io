@@ -86,8 +86,6 @@ Man-Wai Mak received a BEng (Hons) degree in Electronic Engineering from Newcast
     *   ZUO Ruichen
     *   HUANG Zilong
     *   QIN Siqing  
-    *   YANG Yiqing (URIS)  
-    *   ZHANG Yifan (URIS)
 
 
 ## Teaching
