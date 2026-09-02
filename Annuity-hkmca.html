@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>HKMCA Annuity Calculator</title>
+<style>body{font-family:Arial;margin:20px}table{border-collapse:collapse}th,td{border:1px solid #ccc;padding:6px;text-align:right}th{background:#eee}td:first-child,th:first-child{text-align:center}.inputs{margin-bottom:20px}.inputs label{display:block;margin:6px 0}input{width:120px}</style></head><body>
+<h2>This webpage compares the <a href="https://www.hkmca.hk/eng/">HKMC Annuity (HKMCA) Scheme </a> against a self-made annuity scheme. It also calculates the following:</h2>
+<ul>
+    <li>Present values of the monthly receivables across years, assuming a fixed inflation rate across years</li>
+    <li>Income from time deposits of the remaining amount in the self-made annuity scheme, assuming a constant deposit rate</li>
+    <li>Amount remaining in the self-made annuity scheme</li>
+</ul>
+<p>The year at which the two schemes having the same return occurs when the Remaining Amount column changes from positive to negative.</p>  
+
+<div class="inputs">
+<label>Current Age <input id="age" type="number" value="60"></label>
+<label>Investment Amount <input id="invest" type="number" value="2000000"></label>
+<label>Fixed Deposit Interest Rate <input id="rate" type="number" step="0.0001" value="0.025"></label>
+<label>Monthly Receivable/Withdrawal (Obtained from HKMC webpage) <input id="monthly" type="number" value="10200"></label>
+<label>Inflation Rate <input id="inflation" type="number" step="0.0001" value="0.025"></label>
+</div>
+<div id="totals"></div>
+<table><thead><tr><th>End of Year</th><th>End of Age</th><th>Yearly withdrawal</th><th>Average monthly withdrawal</th><th>PV of monthly withdrawal at year end</th><th>Possible fixed-dep interest</th><th>Amount Remaining</th></tr></thead><tbody id="tb"></tbody></table>
+<script>
+function fmt(n){return Number(n).toLocaleString(undefined,{maximumFractionDigits:0});}
+function recalc(){
+const age=+ageEl.value, invest=+investEl.value, rate=+rateEl.value, monthly=+monthlyEl.value, inflation=+inflationEl.value;
+const yearly=monthly*12; let bal=invest; let rows='';
+ let t70=0,t80=0,t90=0;
+ for(let yr=1;yr<=41;yr++){
+  const endAge=age+yr-1;
+  const pv= yearly/Math.pow(1+inflation,yr-1)/12;
+  const interest=(bal-yearly)*rate;
+  bal=(bal-yearly)+interest;
+  if(endAge<=70)t70+=yearly;
+  if(endAge<=80)t80+=yearly;
+  if(endAge<=90)t90+=yearly;
+  rows+=`<tr><td>${yr}</td><td>${endAge}</td><td>${fmt(yearly)}</td><td>${fmt(monthly)}</td><td>${fmt(pv)}</td><td>${fmt(interest)}</td><td>${fmt(bal)}</td></tr>`;
+ }
+ document.getElementById('tb').innerHTML=rows;
+ document.getElementById('totals').innerHTML=`<p>Total receivable/withdrawal at age 70: ${fmt(t70)}<br>Total receivable/withdrawal at age 80: ${fmt(t80)}<br>Total receivable/withdrawal at age 90: ${fmt(t90)}</p>`;
+}
+const ageEl=document.getElementById('age'); const investEl=document.getElementById('invest'); const rateEl=document.getElementById('rate'); const monthlyEl=document.getElementById('monthly'); const inflationEl=document.getElementById('inflation');
+[ageEl,investEl,rateEl,monthlyEl,inflationEl].forEach(x=>x.addEventListener('input',recalc));
+recalc();
+</script></body></html>
