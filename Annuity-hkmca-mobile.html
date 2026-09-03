@@ -1,178 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>HKMCA Annuity Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HKMCA Annuity Calculator</title>
+<style>
+:root {
+    --border: #d9d9d9;
+    --bg: #f5f7fa;
+    --header: #eef2f7;
+}
 
-    <style>
-        body {
-            font-family: Arial;
-            margin: 20px;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    background: var(--bg);
+}
 
-        table {
-            border-collapse: collapse;
-        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+}
 
-        th,
-        td {
-            border: 1px solid #ccc;
-            padding: 6px;
-            text-align: right;
-        }
+h2 {
+    margin-top: 0;
+}
 
-        th {
-            background: #eee;
-        }
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.8rem;
+    margin: 1rem 0 1.5rem;
+}
 
-        td:first-child,
-        th:first-child {
-            text-align: center;
-        }
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
 
-        .inputs {
-            margin-bottom: 20px;
-        }
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem;
+    margin-top: 0.25rem;
+}
 
-        .inputs label {
-            display: block;
-            margin: 6px 0;
-        }
+#totals {
+    margin-bottom: 1rem;
+}
 
-        input {
-            width: 120px;
-        }
-    </style>
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+}
+
+th {
+    background: var(--header);
+}
+
+td:first-child,
+th:first-child {
+    text-align: center;
+}
+
+.numeric {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .container {
+        padding: 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+</style>
 </head>
 <body>
-
+<div class="container">
     <h2>
         This webpage compares the
         <a href="https://www.hkmca.hk/eng/">HKMC Annuity (HKMCA) Scheme</a>
-        against a self-made annuity scheme. It also calculates the following:
+        against a self-made annuity scheme.
     </h2>
 
     <ul>
-        <li>Present values of the monthly receivables across years, assuming a fixed inflation rate across years</li>
-        <li>Income from time deposits of the remaining amount in the self-made annuity scheme, assuming a constant deposit rate</li>
-        <li>Amount remaining in the self-made annuity scheme</li>
+        <li>Present values of monthly receivables across years using a fixed inflation rate.</li>
+        <li>Income from time deposits of the remaining amount using a constant deposit rate.</li>
+        <li>Amount remaining in the self-made annuity scheme.</li>
     </ul>
 
     <p>
-        The year at which the two schemes having the same return occurs when the
-        Remaining Amount column changes from positive to negative.
+        The break-even year occurs when the <strong>Amount Remaining</strong>
+        changes from positive to negative.
     </p>
 
     <div class="inputs">
-        <label>
-            Current Age
+        <label>Current Age
             <input id="age" type="number" value="60">
         </label>
 
-        <label>
-            Investment Amount
+        <label>Investment Amount
             <input id="invest" type="number" value="2000000">
         </label>
 
-        <label>
-            Fixed Deposit Interest Rate
+        <label>Fixed Deposit Interest Rate
             <input id="rate" type="number" step="0.0001" value="0.025">
         </label>
 
-        <label>
-            Monthly Receivable/Withdrawal (Obtained from HKMC webpage)
+        <label>Monthly Receivable/Withdrawal
             <input id="monthly" type="number" value="10200">
         </label>
 
-        <label>
-            Inflation Rate
+        <label>Inflation Rate
             <input id="inflation" type="number" step="0.0001" value="0.025">
         </label>
     </div>
 
     <div id="totals"></div>
 
-    <table>
-        <thead>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>End of Year</th>
+                    <th>End of Age</th>
+                    <th>Yearly Withdrawal</th>
+                    <th>Average Monthly Withdrawal</th>
+                    <th>PV of Monthly Withdrawal at Year End</th>
+                    <th>Possible Fixed-Deposit Interest</th>
+                    <th>Amount Remaining</th>
+                </tr>
+            </thead>
+            <tbody id="tb"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+function fmt(n) {
+    return Number(n).toLocaleString(undefined, {
+        maximumFractionDigits: 0
+    });
+}
+
+function recalc() {
+    const age = +ageEl.value;
+    const invest = +investEl.value;
+    const rate = +rateEl.value;
+    const monthly = +monthlyEl.value;
+    const inflation = +inflationEl.value;
+
+    const yearly = monthly * 12;
+
+    let bal = invest;
+    let rows = '';
+    let t70 = 0;
+    let t80 = 0;
+    let t90 = 0;
+
+    for (let yr = 1; yr <= 41; yr++) {
+        const endAge = age + yr - 1;
+        const pv = yearly / Math.pow(1 + inflation, yr - 1) / 12;
+        const interest = (bal - yearly) * rate;
+
+        bal = (bal - yearly) + interest;
+
+        if (endAge <= 70) t70 += yearly;
+        if (endAge <= 80) t80 += yearly;
+        if (endAge <= 90) t90 += yearly;
+
+        rows += `
             <tr>
-                <th>End of Year</th>
-                <th>End of Age</th>
-                <th>Yearly withdrawal</th>
-                <th>Average monthly withdrawal</th>
-                <th>PV of monthly withdrawal at year end</th>
-                <th>Possible fixed-dep interest</th>
-                <th>Amount Remaining</th>
-            </tr>
-        </thead>
-        <tbody id="tb"></tbody>
-    </table>
+                <td>${yr}</td>
+                <td class="numeric">${endAge}</td>
+                <td class="numeric">${fmt(yearly)}</td>
+                <td class="numeric">${fmt(monthly)}</td>
+                <td class="numeric">${fmt(pv)}</td>
+                <td class="numeric">${fmt(interest)}</td>
+                <td class="numeric">${fmt(bal)}</td>
+            </tr>`;
+    }
 
-    <script>
-        function fmt(n) {
-            return Number(n).toLocaleString(undefined, {
-                maximumFractionDigits: 0
-            });
-        }
+    document.getElementById('tb').innerHTML = rows;
 
-        function recalc() {
-            const age = +ageEl.value;
-            const invest = +investEl.value;
-            const rate = +rateEl.value;
-            const monthly = +monthlyEl.value;
-            const inflation = +inflationEl.value;
+    document.getElementById('totals').innerHTML = `
+        <p>
+            Total receivable/withdrawal at age 70: ${fmt(t70)}<br>
+            Total receivable/withdrawal at age 80: ${fmt(t80)}<br>
+            Total receivable/withdrawal at age 90: ${fmt(t90)}
+        </p>`;
+}
 
-            const yearly = monthly * 12;
-            let bal = invest;
-            let rows = '';
+const ageEl = document.getElementById('age');
+const investEl = document.getElementById('invest');
+const rateEl = document.getElementById('rate');
+const monthlyEl = document.getElementById('monthly');
+const inflationEl = document.getElementById('inflation');
 
-            let t70 = 0;
-            let t80 = 0;
-            let t90 = 0;
+[ageEl, investEl, rateEl, monthlyEl, inflationEl].forEach(el => {
+    el.addEventListener('input', recalc);
+});
 
-            for (let yr = 1; yr <= 41; yr++) {
-                const endAge = age + yr - 1;
-                const pv = yearly / Math.pow(1 + inflation, yr - 1) / 12;
-                const interest = (bal - yearly) * rate;
-
-                bal = (bal - yearly) + interest;
-
-                if (endAge <= 70) t70 += yearly;
-                if (endAge <= 80) t80 += yearly;
-                if (endAge <= 90) t90 += yearly;
-
-                rows += `<tr>
-                    <td>${yr}</td>
-                    <td>${endAge}</td>
-                    <td>${fmt(yearly)}</td>
-                    <td>${fmt(monthly)}</td>
-                    <td>${fmt(pv)}</td>
-                    <td>${fmt(interest)}</td>
-                    <td>${fmt(bal)}</td>
-                </tr>`;
-            }
-
-            document.getElementById('tb').innerHTML = rows;
-
-            document.getElementById('totals').innerHTML = `
-                <p>
-                    Total receivable/withdrawal at age 70: ${fmt(t70)}<br>
-                    Total receivable/withdrawal at age 80: ${fmt(t80)}<br>
-                    Total receivable/withdrawal at age 90: ${fmt(t90)}
-                </p>`;
-        }
-
-        const ageEl = document.getElementById('age');
-        const investEl = document.getElementById('invest');
-        const rateEl = document.getElementById('rate');
-        const monthlyEl = document.getElementById('monthly');
-        const inflationEl = document.getElementById('inflation');
-
-        [ageEl, investEl, rateEl, monthlyEl, inflationEl].forEach(x =>
-            x.addEventListener('input', recalc)
-        );
-
-        recalc();
-    </script>
-
+recalc();
+</script>
 </body>
 </html>
